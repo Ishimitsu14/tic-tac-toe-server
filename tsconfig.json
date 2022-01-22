@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "typeRoots": [
+      "@types",
+      "./node_modules/@types",
+      "./node_modules/socket.io/dist"
+    ],
+    "lib": [
+      "es5",
+      "es6",
+      "dom"
+    ],
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "rootDir": "./",
+    "outDir": "./build",
+    "strictPropertyInitialization": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "strict": true
+  }
+}

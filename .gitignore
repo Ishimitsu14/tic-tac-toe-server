@@ -1,0 +1,15 @@
+.idea
+node_modules
+package-lock.json
+build
+assets/*
+.env
+ormconfig.json
+.DS_Store
+golang_scripts/nohup.*
+source_tiles
+meta_data
+ipfsData.json
+products
+nohup.*
+golang_scripts/main

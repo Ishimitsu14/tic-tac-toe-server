@@ -1,0 +1,3 @@
+{
+  "ignore": ["source_tiles/*", "source_tiles_archives/*", "assets/*", "meta_data/*"]
+}

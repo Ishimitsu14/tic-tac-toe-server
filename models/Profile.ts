@@ -1,34 +1,32 @@
-import {Entity, PrimaryGeneratedColumn, Column, BaseEntity, OneToOne, JoinColumn} from 'typeorm';
+import {
+  Entity, PrimaryGeneratedColumn, Column, BaseEntity,
+} from 'typeorm';
 import { config } from 'dotenv';
 
-config()
+config();
 @Entity()
 export class Profile extends BaseEntity {
-
     @PrimaryGeneratedColumn()
-    id: number;
+      id: number;
 
     @Column({ nullable: true })
-    avatar?: string;
+      avatar?: string;
 
     @Column()
-    displayName: string;
+      displayName: string;
 
     @Column({ nullable: true })
-    firstName?: string;
+      firstName?: string;
 
     @Column({ nullable: true })
-    lastName?: string;
+      lastName?: string;
 
     @Column('timestamp', { nullable: true })
-    birthDay?: string
+      birthDay?: string;
 
-    @Column('timestamp', { default: () => "CURRENT_TIMESTAMP" })
-    createdAt: string;
+    @Column('timestamp', { default: () => 'CURRENT_TIMESTAMP' })
+      createdAt: string;
 
-    @Column('timestamp', { default: null, nullable: true, onUpdate: "CURRENT_TIMESTAMP"})
-    updatedAt?: string;
+    @Column('timestamp', { default: null, nullable: true, onUpdate: 'CURRENT_TIMESTAMP' })
+      updatedAt?: string;
 }
-
-
-

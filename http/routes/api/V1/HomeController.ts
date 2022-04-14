@@ -1,10 +1,10 @@
-import { Request, Response } from "express";
-import isAuth from "@middleware/isAuth";
+import { Request, Response } from 'express';
+import isAuth from '@middleware/isAuth';
 
 export = {
-    '/': {
-        get: [isAuth, async (req: Request, res: Response) => {
-            res.json({ user: req.user })
-        }]
-    }
+  '/': {
+    get: [isAuth, async (req: Request, res: Response) => {
+      res.json({ user: req.user });
+    }],
+  },
 }

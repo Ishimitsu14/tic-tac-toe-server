@@ -44,7 +44,12 @@ const itemsLoop = (route: { route: string; path: string }, http: Server) => {
             itemsLoop({ route: `${route.route}/${item}`, path: fullPath }, http)
         }
     })
-    listeners.map((fn) => fn(io))
+
+    for (const listener of listeners) {
+        if (typeof listener === 'function') {
+            listener(io)
+        }
+    }
 }
 
 module.exports = (http: Server) => {

@@ -1,7 +1,7 @@
 import {NextFunction, Request, Response} from 'express';
 
 import {config} from 'dotenv';
-import jwt, {JwtPayload} from 'jsonwebtoken';
+import jwt from 'jsonwebtoken';
 
 import {User} from '@models/User';
 

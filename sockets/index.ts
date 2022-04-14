@@ -36,7 +36,6 @@ const itemsLoop = (route: { route: string; path: string }, http: Server) => {
     const io = getRoute(http, route.route ? route.route : '/')
     items.map((item: string) => {
         const fullPath = `${route.path}/${item}`
-        const routeName = route.route ? `${route.route}/${getRouteNameByFile(item)}` : `/`
         if (fs.lstatSync(fullPath).isFile() && fullPath.split('.').pop() !== 'map') {
             // Requires all the files in the directory that is not a index.js.
             listeners.push(require(fullPath))

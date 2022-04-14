@@ -1,10 +1,11 @@
+import {User} from "../../models/User";
+
 export {};
 
 declare global{
     namespace Express {
         interface Request {
-            country: string;
-            ipInfo: any;
+            user?: User
         }
     }
 }

@@ -30,7 +30,7 @@
     "experimentalDecorators": true,
     "esModuleInterop": true,
     "sourceMap": true,
-    "strict": true
+    "strict": true,
   },
   "include": ["."],
   "exclude": ["node_modules", "./dist"]

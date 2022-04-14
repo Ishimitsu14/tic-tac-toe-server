@@ -1,3 +1,6 @@
 {
-  "ignore": ["source_tiles/*", "source_tiles_archives/*", "assets/*", "meta_data/*"]
+  "ignore": ["source_tiles/*", "source_tiles_archives/*", "assets/*", "meta_data/*"],
+  "execMap": {
+    "ts": "node --require ts-node/register --require tsconfig-paths/register"
+  }
 }

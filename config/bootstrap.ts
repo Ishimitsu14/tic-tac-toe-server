@@ -1,7 +1,7 @@
 import { DataSource } from 'typeorm';
 import { config } from 'dotenv';
 
-export = async () => {
+export default async () => {
   config();
   try {
     const AppDataSource = new DataSource({
